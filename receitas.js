@@ -34,7 +34,7 @@ if (receita) {
                     <p>${receita.descricao}</p>
                 </div>
             </section>
-            <main>
+            <main class="texto-principal">
                 <section class="ingredientes">
                     <h2>Ingredientes</h2>
                     <ul>

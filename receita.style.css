@@ -13,16 +13,16 @@ body {
 }
 
 .container {
-    width: 65%;
-    margin: 0 auto;
+    width: 60%;
+    height: auto;
     padding: 2rem;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     box-shadow: 0 4px 8px rgba(75, 38, 1, 0.342);
+    
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
     color: #794227;
@@ -38,40 +38,41 @@ header {
 }
 
 .intro {
+    height: 150px;
     display: flex;
     gap: 20px;
     align-items: center;
     background-color: #f3e9dc8a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(75, 38, 1, 0.342);
-    padding: 10px;
-    
-    
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 40%;
+    height: 150px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(75, 38, 1, 0.342);
 }
 
 .texto {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #612f00;
-    max-width: 100%;
     margin: 0;
-    padding: 1rem;
+    padding: 15px;
 }
 
 main {
-    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 20px;
     color: #794227;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -86,13 +87,13 @@ ul {
 
 
 li {
-    font-size: 1.1rem;
+    font-size: 15px;
     line-height: 1.6;
     padding: 0px 0px 10px 0;
     color: #612f00;
 }
 
-strong{
+strong {
     color: #813e1d;
 }
 
@@ -100,10 +101,42 @@ footer {
     background-color: #f5f7f8;
     color: #45474b;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 10px;
     width: 100%;
+    height: 40px;
     position: fixed;
     bottom: 0;
     font-size: 1.1rem;
     z-index: 10;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 70%;      
+    }
+
+    .intro {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .texto {
+        height: auto;
+        font-size: 12px;
+        /* Centraliza o texto */
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+
+
+    
 }
