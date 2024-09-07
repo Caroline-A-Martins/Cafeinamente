@@ -14,7 +14,8 @@ let dados = [
             "Aqueça a água: Coloque a água para esquentar, mas não deixe ferver completamente. O ideal é que a água atinja cerca de 90°C, antes de formar bolhas grandes de fervura.",
             "Prepare o filtro: Coloque o filtro de papel no coador (ou utilize um coador de pano) e adicione o pó de café.",
             "Faça a infusão: Despeje a água quente lentamente sobre o pó de café, em movimentos circulares. Isso ajuda a extrair todos os sabores do café de maneira uniforme."
-        ]
+        ],
+      
     },
     {
         id: 2,
