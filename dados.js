@@ -15,7 +15,7 @@ let dados = [
             "Prepare o filtro: Coloque o filtro de papel no coador (ou utilize um coador de pano) e adicione o pó de café.",
             "Faça a infusão: Despeje a água quente lentamente sobre o pó de café, em movimentos circulares. Isso ajuda a extrair todos os sabores do café de maneira uniforme."
         ],
-      
+        tags: ["quente", "amargo", "forte", "cafeinado", "café_filtrado", "bebida_pura", "café_da_manhã"]
     },
     {
         id: 2,
@@ -31,7 +31,8 @@ let dados = [
         preparo: [
             "Prepare o café filtrado e coloque em uma xícara.",
             "Aqueça o leite e adicione-o ao café, criando um equilíbrio entre café e leite."
-        ]
+        ],
+        tags: ["quente", "equilibrado", "café_filtrado", "leite_vaporizado", "café_au_lait", "café_da_manhã", "bebida_leite"]
     },
     {
         id: 3,
@@ -49,7 +50,8 @@ let dados = [
             "Prepare o café espresso e coloque em uma xícara.",
             "Adicione o leite vaporizado.",
             "Cubra com espuma de leite."
-        ]
+        ],
+        tags: ["quente", "cremoso", "espresso", "leite_vaporizado", "espuma", "cappuccino", "bebida_leite"]
     },
     {
         id: 4,
@@ -75,7 +77,8 @@ let dados = [
             "Cubra com uma camada do creme de mascarpone.",
             "Repita as camadas e finalize com o creme.",
             "Refrigere por pelo menos 4 horas antes de servir."
-        ]
+        ],
+        tags: ["sobremesa", "cremoso", "café_forte", "biscoitos", "mascarpone", "doce", "italiano"]
     },
     {
         id: 5,
@@ -93,7 +96,8 @@ let dados = [
         preparo: [
             "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea e cremosa.",
             "Sirva imediatamente em um copo."
-        ]
+        ],
+        tags: ["gelado", "refrescante", "café_forte", "leite", "gelo", "bebida_energética", "verão"]
     },
     {
         id: 6,
@@ -112,7 +116,8 @@ let dados = [
             "Prepare o café espresso e misture com o chocolate derretido.",
             "Adicione o leite vaporizado e mexa bem.",
             "Sirva quente."
-        ]
+        ],
+        tags: ["quente", "chocolate", "espresso", "leite_vaporizado", "cremoso", "doce", "reconfortante"]
     },
     {
         id: 7,
@@ -129,7 +134,8 @@ let dados = [
             "Prepare o café espresso e coloque em uma xícara.",
             "Aqueça o leite e adicione-o ao café espresso.",
             "Misture bem e sirva."
-        ]
+        ],
+        tags: ["quente", "cremoso", "espresso", "leite_vaporizado", "bebida_leite", "suave", "café_da_manhã"]
     },
     {
         id: 8,
@@ -144,9 +150,10 @@ let dados = [
         ],
         preparo: [
             "Prepare o café espresso e coloque em uma xícara.",
-            "Adicione uma colher de sopa de leite vaporizado sobre o espresso.",
+            "Adicione uma pequena quantidade de leite vaporizado.",
             "Sirva imediatamente."
-        ]
+        ],
+        tags: ["quente", "forte", "espresso", "leite_vaporizado", "café_puro", "cremoso"]
     },
     {
         id: 9,
@@ -156,14 +163,15 @@ let dados = [
         imagem:
             "https://img.freepik.com/fotos-gratis/close-up-de-um-delicioso-chocolate-quente_23-2148799161.jpg?ga=GA1.1.1216350477.1725581398&semt=ais_hybrid",
         ingredientes: [
-            "1 bola de sorvete (sabor de sua preferência)",
-            "1 dose de café espresso quente"
+            "1 bola de sorvete (sabor a gosto)",
+            "1 dose de café espresso"
         ],
         preparo: [
-            "Coloque a bola de sorvete em um copo ou taça.",
-            "Despeje o café espresso quente sobre o sorvete.",
+            "Coloque a bola de sorvete em uma taça ou copo.",
+            "Prepare o café espresso e despeje sobre o sorvete.",
             "Sirva imediatamente."
-        ]
+        ],
+        tags: ["sobremesa", "cremoso", "café_forte", "sorvete", "doce", "rápido", "reconfortante"]
     },
     {
         id: 10,
@@ -175,33 +183,34 @@ let dados = [
         ingredientes: [
             "1 xícara de café forte",
             "1/2 xícara de leite ou creme",
-            "Gelo a gosto",
+            "1/2 xícara de gelo",
             "Açúcar a gosto"
         ],
         preparo: [
             "Prepare o café e deixe esfriar.",
-            "Coloque o café frio em um copo com gelo.",
-            "Adicione leite ou creme e açúcar a gosto.",
+            "Coloque o café resfriado em um copo com gelo.",
+            "Adicione o leite ou creme e o açúcar a gosto.",
             "Misture bem e sirva."
-        ]
+        ],
+        tags: ["gelado", "refrescante", "café_forte", "leite", "gelo", "verão", "refrescante"]
     },
     {
         id: 11,
         titulo: "Milk Shake de Café",
         descricao:
-            "O Milk Shake de Café é uma bebida refrescante que combina a cremosidade do sorvete com o sabor intenso do café. Perfeito para os dias quentes, ele oferece uma mistura equilibrada de doçura e amargor, com uma textura suave e gelada.",
+            "O Milk Shake de Café é uma bebida refrescante que combina a cremosidade do sorvete com o sabor intenso do café. Perfeito para os dias quentes, ele oferece uma mistura equilibrada de doçura e amargor, com uma textura suave e gelada. Ideal para quem busca um toque energizante, o milk shake de café é uma excelente opção para quem quer desfrutar do sabor do café de uma forma mais indulgente e refrescante.",
         imagem:
             "https://images.unsplash.com/photo-1603903631623-3a1f769e45cf?q=80&w=1094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         ingredientes: [
             "1 xícara de café forte",
             "1/2 xícara de sorvete de baunilha",
-            "1/2 xícara de leite",
-            "1 colher de sopa de açúcar"
+            "1/4 xícara de leite",
+            "1 colher de sopa de açúcar (ou a gosto)"
         ],
         preparo: [
-            "Coloque todos os ingredientes no liquidificador.",
-            "Bata até obter uma mistura cremosa e homogênea.",
+            "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea e cremosa.",
             "Sirva imediatamente em um copo."
-        ]
+        ],
+        tags: ["gelado", "cremoso", "café_forte", "sorvete", "doce", "refrescante", "verão"]
     }
 ];
