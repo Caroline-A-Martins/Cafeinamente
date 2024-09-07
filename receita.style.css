@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     gap: 20px;
     box-shadow: 0 4px 8px rgba(75, 38, 1, 0.342);
-    
 }
 
 header {
@@ -85,7 +84,6 @@ ul {
     margin: 0;
 }
 
-
 li {
     font-size: 15px;
     line-height: 1.6;
@@ -110,10 +108,10 @@ footer {
     z-index: 10;
 }
 
-
+/* Responsividade para telas pequenas */
 @media (max-width: 480px) {
     .container {
-        width: 70%;      
+        width: 90%;      
     }
 
     .intro {
@@ -123,18 +121,68 @@ footer {
 
     .texto {
         height: auto;
-        font-size: 12px;
-        /* Centraliza o texto */
+        font-size: 0.875rem; /* Ajusta o tamanho da fonte */
     }
 
     .title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
+/* Responsividade para telas médias */
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        width: 50%;
+        width: 70%;
+    }
+
+    .intro {
+        height: 180px; /* Ajusta a altura para telas médias */
+    }
+
+    img {
+        width: 35%; /* Ajusta a largura da imagem para telas médias */
+    }
+
+    .texto {
+        font-size: 0.875rem !important; /* Ajusta o tamanho da fonte */
     }
     
+
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 1200px) {
+    .container {
+        width: 40%; /* Ajusta a largura da caixa de conteúdo */
+        padding: 3rem; /* Aumenta o padding para telas maiores */
+    }
+
+    .intro {
+        height: 200px; /* Ajusta a altura para telas maiores */
+        gap: 30px; /* Aumenta o espaço entre a imagem e o texto */
+    }
+
+    img {
+        width: 30%; /* Ajusta a largura da imagem */
+        height: 200px; /* Ajusta a altura da imagem */
+    }
+
+    .texto {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte para o texto */
+    }
+
+    .title {
+        font-size: 2rem; /* Aumenta o tamanho da fonte para o título */
+    }
+
+    h2 {
+        font-size: 24px; /* Aumenta o tamanho da fonte para os subtítulos */
+    }
+
+    footer {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte do rodapé */
+    }
 }

@@ -198,7 +198,7 @@ let dados = [
         id: 11,
         titulo: "Milk Shake de Café",
         descricao:
-            "O Milk Shake de Café é uma bebida refrescante que combina a cremosidade do sorvete com o sabor intenso do café. Perfeito para os dias quentes, ele oferece uma mistura equilibrada de doçura e amargor, com uma textura suave e gelada. Ideal para quem busca um toque energizante, o milk shake de café é uma excelente opção para quem quer desfrutar do sabor do café de uma forma mais indulgente e refrescante.",
+            "O Milk Shake de Café é uma bebida refrescante que combina a cremosidade do sorvete com o sabor intenso do café. Perfeito para os dias quentes, ele oferece uma mistura equilibrada de doçura e amargor, com uma textura suave e gelada.",
         imagem:
             "https://images.unsplash.com/photo-1603903631623-3a1f769e45cf?q=80&w=1094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         ingredientes: [
