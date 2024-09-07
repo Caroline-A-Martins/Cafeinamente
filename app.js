@@ -1,23 +1,24 @@
 function pesquisar() {
   let section = document.getElementById("resultados-pesquisa");
-  let resultados = "";
-  
-  // Obtém o valor do campo de pesquisa
-  let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
-  if (campoPesquisa == "") {
-    section.innerHTML = "<p>Nada foi encontrado</p>";
+  // Obtém o valor do campo de pesquisa e remove espaços em branco
+  let campoPesquisa = document.getElementById("campo-pesquisa").value.trim();
+
+  if (campoPesquisa === "") {
+    section.innerHTML = "<p>Nada foi encontrado. Você não digitou nada.</p>";
     return;
   }
-
   campoPesquisa = campoPesquisa.toLowerCase();
 
-  // Itera sobre cada dado da pesquisa e cria um elemento HTML para cada um
+  let resultados = "";
+
   for (let dado of dados) {
     let titulo = dado.titulo.toLowerCase();
     let descricao = dado.descricao.toLowerCase();
+    // Converte o array de tags em uma string para realizar a busca
+    let tags = dado.tags.join(" ").toLowerCase();
 
-    if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
+    if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
       resultados += `
         <div class="item-resultado">
           <!-- Exibe a imagem do resultado --> 
@@ -33,6 +34,10 @@ function pesquisar() {
           </div>
         </div>`;
     }
+  }
+
+  if (resultados === "") {
+    resultados = "<p>Nada foi encontrado.</p>";
   }
 
   // Insere os resultados gerados na seção HTML
