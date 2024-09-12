@@ -22,4 +22,4 @@ O Cafeinamente é o seu barista pessoal! Explore um mundo de receitas com café,
 2. **Abra o arquivo `index.html`:** No seu navegador favorito.
 3. **Comece a pesquisar:** Digite o nome ou um termo e veja a mágica acontecer!
 
-Confira o projeto aqui [https://girlstech.vercel.app/](https://cafeinamente-stcqrwmfv-carolineamartins-projects.vercel.app/)
+Confira o projeto aqui [https://cafeinamente.vercel.app/](https://cafeinamente-stcqrwmfv-carolineamartins-projects.vercel.app/)
